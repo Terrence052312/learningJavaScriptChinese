@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript">
+      var a = 123;
+      // 16 number start with 0X
+      a = 0x10;
+      a = 0xff
+      a = 0xCafe
+      // 8 number start with 0
+      a = 070
+      // 2 number start with e,o,x,b
+        a = 010;
+       // not all severs get this, but google and firefox all get it. IE does not get it!
+        a = "070"
+        //a = Number(a)
+        //a = parseInt(a)
+        a = parseInt(a,10)
+        // you can add 10 or 8 or 2 number to in parseInt so that you create a 2nd var. And that solves the problem.
+
+        console.log(a);
+       console.log(typeof a);
+    </script>
+  </head>
+  <body></body>
+</html>

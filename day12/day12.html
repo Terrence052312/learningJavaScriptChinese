@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript">
+        //string
+      let a = "123";
+       a = Number(a)
+       // string changes into the inside number inside, no letters or else NaN. Nothing or many spaces is 0
+       //boolean
+       a = true
+       a = Number(a)
+       // true changeing into a number is 1 and boolean. False changeing a number is 0
+      //null
+        a = null
+        a = Number(a)
+        // null changes into 0 no matter what
+        // undefined
+        a = undefined
+        a = Number(a)
+        // undefined changeing into number gives NaN (Not a Number)
+        a = "123px";
+        a = Number(a);
+        // when you change a thing like px even if it's in css, or other coding like js JAVA WHATEVER it will still give you NaN (Not a Number)
+       console.log(a);
+      console.log(typeof a);
+    </script>
+  </head>
+  <body></body>
+</html>
