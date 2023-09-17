@@ -6,10 +6,28 @@
     <title>Document</title>
   </head>
   <script type="text/javascript">
+    // anything that is doing addition with no mather anything with strings, that thing is gonna turn into a string then doing the calcelation very important! Please don't forget about this part!
     var a = 123;
+    a = "123" + "456";
+    // result will become 123456 because... according to line 11 in the html5 code
+    // because it's a string not a number so they will add them together as a string and not doing math.
+    a = 123 + "hello";
+    // result is 123hello
+    a = true + "hello";
+    // result Truehello
+    var c = 123;
+    c = String(c); // not the best way
+    c = c + "hello"; // the best way to do this
+    c = c + ""; // useing this is the same effect on line 19 of the code.
+    c = null;
+    c = c + "";
+    c = 123;
 
+    console.log(c);
+    console.log(typeof c);
+    console.log("c = " + c); // use this to identifiy what is 123; the result will show you like {c = 123}
     console.log(a);
-    cinsole.log(typeof a);
+    console.log(typeof a);
   </script>
   <body></body>
 </html>
