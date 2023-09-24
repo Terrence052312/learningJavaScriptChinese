@@ -6,8 +6,19 @@
     <title>Document</title>
 </head>
     <script type = text/JavaScript>
-        let a = 123;
-        alert(a)
+        var n1 = 10 , n2 = 20
+        var n = n1++ // n1 = 11 because it adds one automactley. n1++ is still = 10
+        console.log(n) //10
+        console.log(n1) //11
+        n = ++n1 //n1 = 12 because of lines 10 - 13 ++n1 = 12 
+        console.log(n) //12
+        console.log(n1) //12
+        n = n2-- // n2 = 19 n2-- = 20
+        console.log(n) //20
+        console.log(n2) //19
+        n = --n2 // n2 = 18 --n2 = 18 ...... because of lines 16 - 19 that effected var n value
+        console.log(n)
+        console.log(n2)
     </script>
 <body>
     
