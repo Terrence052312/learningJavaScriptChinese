@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script type="text/JavaScript">
+    // true || true
+    var a = 2 || 2; //2
+    a = 2 || NaN //2
+    a = 2 || 0 //2
+    // false || true/false
+    a = NaN || 2 //2
+    a = NaN || 0 //0
+    a = "" || "hello" //hello
+    a = -1 || "hello" // -1
+    console.log(a)
+  </script>
+  <body></body>
+</html>
