@@ -6,55 +6,61 @@
     <title>Document</title>
   </head>
   <script type="text/JavaScript">
-    // 1. length
-    const numbersArray = [18, 76, 31, 33, 23] // a array
-    const numbersArrayLength = numbersArray.length
-    console.log(numbersArrayLength)
-    console.log(numbersArray.length)
-    const trainsArray = ["4", "5", "6", "7 local", "7 express"]
-    const trainsArrayLength = trainsArray.length
-    console.log(trainsArrayLength)
-    console.log(trainsArray.length)
+        // 1. length
+        const numbersArray = [18, 76, 31, 33, 23] // a array
+        const numbersArrayLength = numbersArray.length
+        console.log(numbersArrayLength)
+        console.log(numbersArray.length)
+        const trainsArray = ["4", "5", "6", "7 local", "7 express"]
+        const trainsArrayLength = trainsArray.length
+        console.log(trainsArrayLength)
+        console.log(trainsArray.length)
 
-    // 2. element (index starts at 0!!!!!!!!!!!!!!!!) hint (total lenath -1)
-    console.log(numbersArray[0]);
-    console.log(numbersArray[4]);
-    console.log(numbersArray[numbersArrayLength-1]) // a better way to do this
-    // train
-    console.log(trainsArray[0])
-    console.log(trainsArray[4])
-    console.log(trainsArray[trainsArrayLength-1])
+        // 2. element (index starts at 0!!!!!!!!!!!!!!!!) hint (total lenath -1)
+        console.log(numbersArray[0]);
+        console.log(numbersArray[4]);
+        console.log(numbersArray[numbersArrayLength-1]) // a better way to do this
+        // train
+        console.log(trainsArray[0])
+        console.log(trainsArray[4])
+        console.log(trainsArray[trainsArrayLength-1])
 
-    // 3. forEach (all of the things in the array)(NEW WAY ARROWS FUNTION)
-    numbersArray.forEach((element, index)=>{
-        element++
-        console.log(index, element)
-    })
-    console.log("==============================================================")
-    // train
-    trainsArray.forEach((element, index)=>{
-        console.log(index, element)
-    })
-    console.log("==============================================================")
-    // 3a. forEach (old way)
-    for(let i=0;i<numbersArray.length; i++){
-        console.log (i, numbersArray[i])
-    }
+        // 3. forEach (all of the things in the array)(NEW WAY ARROWS FUNTION)
+        numbersArray.forEach((element, index)=>{
+            element++
+            console.log(index, element)
+        })
+        console.log("==============================================================")
+        // train
+        trainsArray.forEach((element, index)=>{
+            console.log(index, element)
+        })
+        console.log("==============================================================")
+        // 3a. forEach (old way)
+        for(let i=0;i<numbersArray.length; i++){
+            console.log (i, numbersArray[i])
+        }
 
-    console.log("==============================================================")
-    for ( let index in numbersArray ){
-        console.log(numbersArray[index])
-    }
+        console.log("==============================================================")
+        for ( let index in numbersArray ){
+            console.log(numbersArray[index])
+        }
 
-    // 4. doing things in ForEach
-    numbersArray.forEach((element, index)=>{
-        element++ // useing ++ is ok
-        element = element + 1 // useing this is good
-        let Newelement = element + 1 // fine but we don't use that
-        console.log(index, element)
-    })
+        // 4. doing things in ForEach
+        numbersArray.forEach((element, index)=>{
+            element++ // useing ++ is ok
+            element = element + 1 // useing this is good
+            let Newelement = element + 1 // fine but we don't use that
+            console.log(index, element)
+        })
+        // how to sort a array
+        console.log(============================================================)
+        const numbers = [18, 76, 31, 33, 23];
+    numbers.sort((a, b) => a - b);
 
-    const personObject = {} // a objects
+    console.log(numbers); // This will output [18, 23, 31, 33, 76]
+
+        const personObject = {} // a objects
   </script>
   <body></body>
 </html>
