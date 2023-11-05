@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script type="text/JavaScript">
+      const numbersArray = [86,11,33,9,47,26]
+      const numbersArrayLength = numbersArray.length
+      console.log(numbersArray[0])
+      console.log(numbersArray[5])
+      console.log(numbersArray[numbersArrayLength-1])
+      console.log("###############################")
+      console.log(numbersArrayLength)
+      console.log("###############################")
+      numbersArray.forEach((element, index)=>{
+              element = element - 3
+              console.log(index, element)
+      })
+    </script>
+  </body>
+</html>
